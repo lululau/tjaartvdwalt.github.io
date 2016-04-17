@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/</loc>
+    <lastmod>2015-10-01T13:48:22-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/blog/2015-10-01-implementing-app-transport-security-on-nodejs/</loc>
+    <lastmod>2015-10-01T13:48:22-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/blog/2015-09-02-photo_rename/</loc>
+    <lastmod>2015-09-02T11:16:50-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/blog/2015-05-28-ergodox/</loc>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/equipment/</loc>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/blog/2015-04-18-firefox/</loc>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/free_software/</loc>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/photos/</loc>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/resume/</loc>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/blog/2015-08-28-org-mode/</loc>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/blog/2015-06-03-gpg_with_ssh/</loc>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/about/</loc>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/blog/2015-03-01-i3myway/</loc>
+  </url>
+  
+</urlset>

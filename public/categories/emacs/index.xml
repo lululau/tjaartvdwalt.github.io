@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emacs on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/categories/emacs/</link>
+    <description>Recent content in Emacs on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/categories/emacs/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The problem with Org mode</title>
+      <link>http://replace-this-with-your-hugo-site.com/blog/2015-08-28-org-mode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/blog/2015-08-28-org-mode/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;I know that my ideas in this article will be hated by many staunch Org mode supporters. I still believe I am right.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For the last few years I have been using the Emacs plugin &lt;a href=&#34;http://orgmode.org/&#34;&gt;Org mode&lt;/a&gt;. This is an amazing text outliner tool that can do just about anything. As a student I used it to create Latex document, Latex Beamers, project websites etc. Its coolness knows no bounds, you can even create a spreadsheet in plain text!&lt;/p&gt;
+
+&lt;p&gt;Despite it being such an amazing tool, Org mode has some serious problems:&lt;/p&gt;
+
+&lt;h1 id=&#34;it-does-not-use-markdown-syntax:e9d52fc4a5ada326be04ea8c4e679392&#34;&gt;It does not use Markdown syntax.&lt;/h1&gt;
+
+&lt;p&gt;Ok, so this is probably not really a valid point, since Org mode predates Markdown. Unfortunately, today, Markdown is everywhere. &lt;strong&gt;A lot&lt;/strong&gt; of people know the syntax and are writing tools supporting the syntax.&lt;/p&gt;
+
+&lt;p&gt;For almost 3 years I was a loyal Org mode supporter, opting to use Org mode instead of Markdown syntax whenever possible:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;On Github I would replace &lt;code&gt;README.md&lt;/code&gt; with &lt;code&gt;README.org&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;I even wrote a &lt;a href=&#34;https://github.com/tjaartvdwalt/jekyll-org-mode-converter&#34;&gt;Jekyll Org mode converter&lt;/a&gt; for converting Org mode to HTML (I used this in the previous incarnation of this website.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The problem with writing Org mode &lt;code&gt;README&lt;/code&gt;&amp;rsquo;s is that it makes collaboration difficult with people that know only Markdown. Github is also the only site I know of that will even render Org mode online. (Bitbucket, for example, doesn&amp;rsquo;t)&lt;/p&gt;
+
+&lt;p&gt;The problem with my Jekyll plugin is that it increases the complexity of publishing to Github Pages. Github, for obvious reasons, do not allow custom plugins in their build. This means that if you want to use my plugin you need to build the site locally, and then commit the HTML to &lt;code&gt;master&lt;/code&gt;. You probably also want to commit the source somewhere, so you create a different branch and commit it there.&lt;/p&gt;
+
+&lt;p&gt;If you use Markdown syntax however, Github will build the HTML from the source directly. You just commit your source to &lt;code&gt;master&lt;/code&gt; and Github takes care of the rest.&lt;/p&gt;
+
+&lt;h1 id=&#34;it-is-too-tightly-integrated-with-emacs:e9d52fc4a5ada326be04ea8c4e679392&#34;&gt;It is too tightly integrated with Emacs&lt;/h1&gt;
+
+&lt;p&gt;Another problem with Org mode is that it is so tightly integrated with Emacs. My major issue with this is that it prohibits collaboration. I cannot simply give my Org mode source to a non Emacs using friend and explain to them what to install, and what command to run in order to compile it. I would first need to give them about a six months worth of Emacs lessons for them to be able to use it.&lt;/p&gt;
+
+&lt;h1 id=&#34;the-answer:e9d52fc4a5ada326be04ea8c4e679392&#34;&gt;The answer&lt;/h1&gt;
+
+&lt;p&gt;About a month ago I got tired of swimming upstream, and started embracing Markdown instead of Org mode wherever possible. So far this has been a liberating experience.&lt;/p&gt;
+
+&lt;p&gt;If I was the Org mode author, I would look for a way to switch to Markdown syntax, &lt;code&gt;Org mode flavored Markdown&lt;/code&gt; if you like. I would keep the Org mode features that Markdown lack, like tables. You could maintain a &amp;lsquo;legacy mode&amp;rsquo; for old Org mode styled documents.&lt;/p&gt;
+
+&lt;p&gt;I would also extract as much of the Org mode core as possible from Emacs lisp code. I would rewrite it into a modern programming language. (Python or Javascript seem like obvious choices) This would give me the possibility of more collaborators getting involved. I would then write Org mode plugins for Emacs, and one other editor (Vim or Atom).&lt;/p&gt;
+
+&lt;p&gt;Org mode is a great tool. It has the potential to revolutionize the way we do text editing, but it needs revolutionary thinking to get it there.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

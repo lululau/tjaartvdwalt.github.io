@@ -3,7 +3,14 @@ build:
   steps:
     - arjen/hugo-build:
         version: "0.15"
-        theme: redlounge
-        config: my-production-config.toml
-        dev_flags: -D -F
+        theme: hugo_theme_robust
         prod_branches: master
+        dev_branches: src
+deploy:
+  steps:
+    - install-packages:
+        packages: git ssh-client
+    - lukevivier/gh-pages@0.2.1:
+        token: $GIT_TOKEN
+        domain: hugo-wercker.ig.nore.me
+        basedir: public
