@@ -10,9 +10,8 @@ deploy:
   steps:
     - install-packages:
         packages: git ssh-client
-    - tjaartvdwalt/gh-pages:
+    - tjaart/gh-pages@0.2.1:
         token: $GIT_TOKEN
         domain: tjaart.co.za
         basedir: public
 
-        
