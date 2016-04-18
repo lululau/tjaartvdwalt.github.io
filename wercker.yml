@@ -14,5 +14,4 @@ deploy:
         token: $GIT_TOKEN
         domain: tjaart.co.za
         basedir: public
-        repo: tjaartvdwalt/tjaartvdwalt.github.io:master
 
