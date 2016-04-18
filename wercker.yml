@@ -12,7 +12,7 @@ deploy:
         packages: git ssh-client
     - add-ssh-key:
         keyname: GITHUB_KEY
-    - tjaart/gh-pages@0.2.1:
+    - tjaart/gh-pages@0.3.0:
         domain: tjaart.co.za
         basedir: public
 
