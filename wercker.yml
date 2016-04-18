@@ -15,4 +15,4 @@ deploy:
         domain: tjaart.co.za
         basedir: public
         repo: tjaartvdwalt/tjaartvdwalt.github.io:master
- 
+
