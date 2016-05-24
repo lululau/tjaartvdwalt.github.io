@@ -3,7 +3,7 @@ layout: theme:page
 title: What's in a name?
 permalink: /about/
 ---
-
+ 
 # What's in a name?
 <img class="rounded-img float-right" width="200" src="https://s.gravatar.com/avatar/802e5786235d6cfa93279d29c6626c4c?s=200">
 
