@@ -1,3 +1,4 @@
 baseurl = "http://www.tjaart.co.za/"
 languageCode = "en-us"
 title = "Tjaart's homepage"
+theme = "hugo-theme-arch"
