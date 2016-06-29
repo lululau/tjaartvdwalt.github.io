@@ -11,7 +11,7 @@ deploy:
     - install-packages:
         packages: git ssh-client
     - add-ssh-key:
-        keyname: GITHUB_KEY
+        keyname: GITHUB_KEY_PRIVATE
     - tjaart/gh-pages@0.3.0:
         domain: tjaart.co.za
         basedir: public
