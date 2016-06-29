@@ -12,6 +12,9 @@ deploy:
         packages: git ssh-client
     - add-ssh-key:
         keyname: GITHUB_KEY
+    - add-to-known_hosts:
+        hostname: github.com
+        fingerprint: 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48
     - tjaart/gh-pages@0.3.0:
         domain: tjaart.co.za
         basedir: public
