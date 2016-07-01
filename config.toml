@@ -14,7 +14,6 @@ googleAnalytics = ""
 [params]
   name = "Tjaart van der Walt"
   role = "Software Developer"
-  organization = "Solmates"
   avatar = "avatar.jpeg"
   email = "tjaart@tjaart.co.za"
 
@@ -45,7 +44,7 @@ googleAnalytics = ""
       year = 2015
 
     [[params.about.education]]
-      course = "BSc Computer Science "
+      course = "BSc Computer Science"
       institution = "North West University"
       year = 2002
 
@@ -127,15 +126,15 @@ googleAnalytics = ""
   url = "#posts"
   weight = 3
 
-# [[menu.main]]
-#   name = "Projects"
-#   url = "#projects"
-#   weight = 4
+[[menu.main]]
+  name = "Projects"
+  url = "#projects"
+  weight = 4
 
-# [[menu.main]]
-#   name = "Resumé"
-#   url = "#resume"
-#   weight = 5
+[[menu.main]]
+  name = "Resumé"
+  url = "/resume.pdf"
+  weight = 5
 
 [[menu.main]]
   name = "Contact"
