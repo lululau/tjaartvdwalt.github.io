@@ -75,6 +75,13 @@ googleAnalytics = ""
 
   # Projects section.
   # Section will only be displayed if there are projects in `content/project/`.
+  [params.photos]
+    title = "Photo Albums"
+    subtitle = ""
+
+
+  # Projects section.
+  # Section will only be displayed if there are projects in `content/project/`.
   [params.projects]
     title = "Projects"
     subtitle = ""
@@ -112,6 +119,12 @@ googleAnalytics = ""
     icon_pack = "fa"
     link = "//bitbucket.org/tjaartvdwalt"
 
+[[params.social]]
+    icon = "gitlab"
+    icon_pack = "fa"
+    link = "//gitlab.com/tjaart"
+
+
 
 # Navigation Links
 #   The weight parameter defines the order that the links will appear in.
@@ -125,6 +138,11 @@ googleAnalytics = ""
   name = "Posts"
   url = "#posts"
   weight = 3
+
+[[menu.main]]
+  name = "Photos"
+  url = "#photos"
+  weight = 4
 
 [[menu.main]]
   name = "Projects"
