@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tjaart&#39;s homepage</title>
+    <link>http://www.tjaart.co.za/tags/opinion/index.xml</link>
+    <description>Recent content on Tjaart&#39;s homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Tjaart van der Walt</copyright>
+    <atom:link href="http://www.tjaart.co.za/tags/opinion/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A critique of email clients</title>
+      <link>http://www.tjaart.co.za/post/critique_of_email_clients/</link>
+      <pubDate>Mon, 05 Dec 2016 10:07:45 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/post/critique_of_email_clients/</guid>
+      <description>
+
+&lt;p&gt;This might sound crazy, but in 2016, but I have not found an email client that I really want to use.&lt;/p&gt;
+
+&lt;p&gt;Let me walk through the mail clients I have tried, what are good about them, and what I would like to see changed.&lt;/p&gt;
+
+&lt;h2 id=&#34;critisism-of-current-clients&#34;&gt;Critisism of current clients&lt;/h2&gt;
+
+&lt;h3 id=&#34;thunderbird&#34;&gt;Thunderbird&lt;/h3&gt;
+
+&lt;p&gt;I really like Thunderbird, but I do think Mozilla does not give it the attention it deserves, and it seems to play second fiddle to Firefox. For example, it uses the same plugin architecture as Firefox, but the available plugins are not comparable in number or quality to that of Firefox. In some cases it also allows you to install &amp;ldquo;Firefox specific&amp;rdquo; plugins that do not really work in the Thunderbird context. It also lacks a mobile companion.&lt;/p&gt;
+
+&lt;h3 id=&#34;gmail&#34;&gt;GMail&lt;/h3&gt;
+
+&lt;p&gt;When I talk about GMail I really refer to 2 separate things: The GMail web client, and the mobile applications for Android/iOS.&lt;/p&gt;
+
+&lt;p&gt;On the web client: NO! Stop it! You should not read your email in a browser!&lt;/p&gt;
+
+&lt;p&gt;My main criticism of the web client is that it only works for GMail managed domains, and you can only view one mailbox at a time, so no unified inbox. It also does not have a plugin system (other than some experimental features Google allows you to enable manually).&lt;/p&gt;
+
+&lt;p&gt;On the mobile client: I really like it. After a recent update, you can use it as a POP/IMAP client for arbitrary mailboxes, giving you the unified inbox lacking in the web client. But alas, it does not support plugins. Using the web and the mobile client together, or even using Thunderbird with the mobile client is a fairly good option, but you have to live with the fact that each have different capabilities, making your experience much different based on the platform.&lt;/p&gt;
+
+&lt;h3 id=&#34;k9-mail&#34;&gt;K9 Mail&lt;/h3&gt;
+
+&lt;p&gt;This is a lesser known, but great, email client for Android. Unfortunately it is only available for the one platform.&lt;/p&gt;
+
+&lt;h3 id=&#34;mu&#34;&gt;mu&lt;/h3&gt;
+
+&lt;p&gt;Not many people outside of the Emacs community would have heard of this, but it used to be my primary email client for a number of years. It is likely the most customizable &amp;ldquo;email searcher&amp;rdquo; ever. You can write elisp functions to accomplish just about anything. It does have problems though:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;It does not handle the downloading of mail, for that you have to use an external mail synchronization tool such as offlineImap or mbsync.&lt;/li&gt;
+&lt;li&gt;You are tied to Emacs. It goes without saying that there is no mobile version.&lt;/li&gt;
+&lt;li&gt;Its not exactly what I would call &amp;ldquo;modern&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Tinkering with configuration takes a lot of time, and sharing configuration is not always simple.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;my-ideal-mail-client&#34;&gt;My ideal mail client&lt;/h2&gt;
+
+&lt;p&gt;Taking all of these criticisms into consideration, what would my perfect mail client to look like?&lt;/p&gt;
+
+&lt;h3 id=&#34;it-should-work-on-most-platforms&#34;&gt;It should work on most platforms&lt;/h3&gt;
+
+&lt;p&gt;It should have a mobile, desktop and web interface. Ideally it should also be easily portable to new platforms. As far as possible these interfaces should have similar capabilities.&lt;/p&gt;
+
+&lt;h3 id=&#34;it-should-be-extensible&#34;&gt;It should be extensible&lt;/h3&gt;
+
+&lt;p&gt;In my mind &lt;code&gt;mu&lt;/code&gt;  sets the bar that any mail client should be measured against when it comes to extensibility. Unfortunately it lacks a way to deliver these capabilities to users that do not want to spend their lives tinkering with email configuration.&lt;/p&gt;
+
+&lt;p&gt;I think we can learn a lot from how the Atom editor approached a similar problem in the text editor space. They harnessed the good parts of Emacs/Vim, while making it more accessible to modern users (who do not have the same type of patience with computers we had in the 1980&amp;rsquo;s).&lt;/p&gt;
+
+&lt;h3 id=&#34;it-should-be-free&#34;&gt;It should be Free&lt;/h3&gt;
+
+&lt;p&gt;Call it Open Sourced if you like. I believe the developer community will rally around a well implemented free mail client, similar to how Telegram achieved success, in the face of proprietary messaging systems like Whatsapp.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The problem with Org mode</title>
+      <link>http://www.tjaart.co.za/post/org_mode/</link>
+      <pubDate>Fri, 28 Aug 2015 10:24:58 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/post/org_mode/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;I know that my ideas in this article will be hated by many staunch Org mode supporters. I still believe I am right.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For the last few years I have been using the Emacs plugin &lt;a href=&#34;http://orgmode.org/&#34;&gt;Org mode&lt;/a&gt;. This is an amazing text outliner tool that can do just about anything. As a student I used it to create Latex document, Latex Beamers, project websites etc. Its coolness knows no bounds, you can even create a spreadsheet in plain text!&lt;/p&gt;
+
+&lt;p&gt;Despite it being such an amazing tool, Org mode has some serious problems:&lt;/p&gt;
+
+&lt;h1 id=&#34;it-does-not-use-markdown-syntax&#34;&gt;It does not use Markdown syntax.&lt;/h1&gt;
+
+&lt;p&gt;Ok, so this is probably not really a valid point, since Org mode predates Markdown. Unfortunately, today, Markdown is everywhere. &lt;strong&gt;A lot&lt;/strong&gt; of people know the syntax and are writing tools supporting the syntax.&lt;/p&gt;
+
+&lt;p&gt;For almost 3 years I was a loyal Org mode supporter, opting to use Org mode instead of Markdown syntax whenever possible:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;On Github I would replace &lt;code&gt;README.md&lt;/code&gt; with &lt;code&gt;README.org&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;I even wrote a &lt;a href=&#34;https://github.com/tjaartvdwalt/jekyll-org-mode-converter&#34;&gt;Jekyll Org mode converter&lt;/a&gt; for converting Org mode to HTML (I used this in the previous incarnation of this website.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The problem with writing Org mode &lt;code&gt;README&lt;/code&gt;&amp;rsquo;s is that it makes collaboration difficult with people that know only Markdown. Github is also the only site I know of that will even render Org mode online. (Bitbucket, for example, doesn&amp;rsquo;t)&lt;/p&gt;
+
+&lt;p&gt;The problem with my Jekyll plugin is that it increases the complexity of publishing to Github Pages. Github, for obvious reasons, do not allow custom plugins in their build. This means that if you want to use my plugin you need to build the site locally, and then commit the HTML to &lt;code&gt;master&lt;/code&gt;. You probably also want to commit the source somewhere, so you create a different branch and commit it there.&lt;/p&gt;
+
+&lt;p&gt;If you use Markdown syntax however, Github will build the HTML from the source directly. You just commit your source to &lt;code&gt;master&lt;/code&gt; and Github takes care of the rest.&lt;/p&gt;
+
+&lt;h1 id=&#34;it-is-too-tightly-integrated-with-emacs&#34;&gt;It is too tightly integrated with Emacs&lt;/h1&gt;
+
+&lt;p&gt;Another problem with Org mode is that it is so tightly integrated with Emacs. My major issue with this is that it prohibits collaboration. I cannot simply give my Org mode source to a non Emacs using friend and explain to them what to install, and what command to run in order to compile it. I would first need to give them about a six months worth of Emacs lessons for them to be able to use it.&lt;/p&gt;
+
+&lt;h1 id=&#34;the-answer&#34;&gt;The answer&lt;/h1&gt;
+
+&lt;p&gt;About a month ago I got tired of swimming upstream, and started embracing Markdown instead of Org mode wherever possible. So far this has been a liberating experience.&lt;/p&gt;
+
+&lt;p&gt;If I was the Org mode author, I would look for a way to switch to Markdown syntax, &lt;code&gt;Org mode flavored Markdown&lt;/code&gt; if you like. I would keep the Org mode features that Markdown lack, like tables. You could maintain a &amp;lsquo;legacy mode&amp;rsquo; for old Org mode styled documents.&lt;/p&gt;
+
+&lt;p&gt;I would also extract as much of the Org mode core as possible from Emacs lisp code. I would rewrite it into a modern programming language. (Python or Javascript seem like obvious choices) This would give me the possibility of more collaborators getting involved. I would then write Org mode plugins for Emacs, and one other editor (Vim or Atom).&lt;/p&gt;
+
+&lt;p&gt;Org mode is a great tool. It has the potential to revolutionize the way we do text editing, but it needs revolutionary thinking to get it there.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

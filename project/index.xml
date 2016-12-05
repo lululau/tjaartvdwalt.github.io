@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project-rsses on Tjaart&#39;s homepage</title>
+    <link>http://www.tjaart.co.za/project/index.xml</link>
+    <description>Recent content in Project-rsses on Tjaart&#39;s homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Tjaart van der Walt</copyright>
+    <lastBuildDate>Sat, 01 Aug 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.tjaart.co.za/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Py3Status</title>
+      <link>http://www.tjaart.co.za/project/py3status/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/project/py3status/</guid>
+      <description>&lt;p&gt;I have contributed a few plugins to &lt;a href=&#34;https://github.com/ultrabug/py3status&#34;&gt;py3status&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;since v2.5&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/ultrabug/py3status/blob/2.5/py3status/modules/dropboxd_status.py&#34;&gt;dropboxd_status&lt;/a&gt; shows the status of your dropbox service.that has been available since version 2.5&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;since v3.1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/ultrabug/py3status/blob/3.1/py3status/modules/backlight.py&#34;&gt;backlight&lt;/a&gt; shows your backlight percentage.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Light Compositing</title>
+      <link>http://www.tjaart.co.za/project/light-composition/</link>
+      <pubDate>Sun, 01 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/project/light-composition/</guid>
+      <description>&lt;p&gt;A set of tools that allow the user to merge a set of partially lit input images into one well lit image.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://badge.fury.io/py/light-compositing&#34;&gt;&lt;img src=&#34;https://badge.fury.io/py/light-compositing.svg&#34; alt=&#34;PyPI version&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://opensource.org/licenses/MIT&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/license-MIT-blue.svg&#34; alt=&#34;license&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sshmount-netrc</title>
+      <link>http://www.tjaart.co.za/project/sshmountrc/</link>
+      <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/project/sshmountrc/</guid>
+      <description>&lt;p&gt;A tool that mounts sshfs mountpoints using authentication information from your &lt;code&gt;.netrc&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://badge.fury.io/py/sshmount-netrc&#34;&gt;&lt;img src=&#34;https://badge.fury.io/py/sshmount-netrc.svg&#34; alt=&#34;PyPI version&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://opensource.org/licenses/MIT&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/license-MIT-blue.svg&#34; alt=&#34;license&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Jekyll Org mode converter</title>
+      <link>http://www.tjaart.co.za/project/jekyll-org-mode-converter/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/project/jekyll-org-mode-converter/</guid>
+      <description>&lt;p&gt;Jekyll is a framework to easily deploy static websites using Markdown syntax. This Converter allows one to deploy  your website using Orgmode syntax instead.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://badge.fury.io/rb/jekyll-org-mode-converter&#34;&gt;&lt;img src=&#34;https://badge.fury.io/rb/jekyll-org-mode-converter.svg&#34; alt=&#34;Gem Version&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://opensource.org/licenses/MIT&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/license-MIT-blue.svg&#34; alt=&#34;license&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Web2echo</title>
+      <link>http://www.tjaart.co.za/project/web2echo/</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/project/web2echo/</guid>
+      <description>&lt;p&gt;A command line tool to convert the text of the public domain &lt;a href=&#34;http://www.ebible.org/web/&#34;&gt;World English Bible&lt;/a&gt; into the &lt;a href=&#34;https://bitbucket.org/jpolcol/echobible&#34;&gt;Echo Bible Reader&lt;/a&gt; format.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://gnu.org/licenses/gpl-3.0-standalone.html&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/license-GPLv3-blue.svg&#34; alt=&#34;License&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Photo Renamer</title>
+      <link>http://www.tjaart.co.za/project/photo-renamer/</link>
+      <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/project/photo-renamer/</guid>
+      <description>&lt;p&gt;A command line tool that allows for the renaming of image files in bulk. Its primary purpose is to synchronize the filenames of photos taken on different devices based on the time the photo was taken.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://badge.fury.io/js/photo_rename&#34;&gt;&lt;img src=&#34;https://badge.fury.io/js/photo_rename.svg&#34; alt=&#34;npm version&#34; /&gt;&lt;/a&gt;
+&lt;a href=&#34;https://gnu.org/licenses/gpl-3.0-standalone.html&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/license-GPLv3-blue.svg&#34; alt=&#34;License&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Image processing tools</title>
+      <link>http://www.tjaart.co.za/project/image-processing-tools/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/project/image-processing-tools/</guid>
+      <description>&lt;p&gt;A few Image processing tools written as part of my graduate courses on the subject.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://gnu.org/licenses/gpl-3.0-standalone.html&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/license-GPLv3-blue.svg&#34; alt=&#34;License&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Py3Status Pomodoro Timer</title>
+      <link>http://www.tjaart.co.za/project/py3status-pomodoro-timer/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/project/py3status-pomodoro-timer/</guid>
+      <description>&lt;p&gt;A &lt;a href=&#34;http://pomodorotechnique.com/&#34;&gt;pomodoro&lt;/a&gt; timer for &lt;a href=&#34;http://i3wm.org/i3status/manpage.html&#34;&gt;i3status&lt;/a&gt; using &lt;a href=&#34;https://github.com/ultrabug/py3status&#34;&gt;py3status&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://opensource.org/licenses/MIT&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/license-MIT-blue.svg&#34; alt=&#34;license&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>UMSL Graduate Advisor</title>
+      <link>http://www.tjaart.co.za/project/umsl-graduate-advisor/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/project/umsl-graduate-advisor/</guid>
+      <description>&lt;p&gt;A Web Application that helps with the scheduling of courses for graduate students in Computer Science and Mathematics at the University of Missouri-St.Louis.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://opensource.org/licenses/MIT&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/license-MIT-blue.svg&#34; alt=&#34;license&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Netctl Gnome Shell Extension</title>
+      <link>http://www.tjaart.co.za/project/netctl-gnome-shell-extension/</link>
+      <pubDate>Mon, 01 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/project/netctl-gnome-shell-extension/</guid>
+      <description>&lt;p&gt;A Gnome shell extension that provides a quick way to switch between &lt;code&gt;netctl&lt;/code&gt; profiles. &lt;a href=&#34;https://wiki.archlinux.org/index.php/netctl&#34;&gt;Netctl&lt;/a&gt; is CLI-tool to configure network connections using profiles.&lt;/p&gt;
+
+&lt;p&gt;This project has been adopted by &lt;a href=&#34;https://github.com/nigeil&#34;&gt;Nigel Michki&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

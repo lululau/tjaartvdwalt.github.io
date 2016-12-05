@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme" content="hugo-academic">
+    <meta name="generator" content="Hugo 0.17" />
+    <meta name="author" content="Tjaart van der Walt">
+    <meta name="description" content="Software Developer">
+
+    <link rel="stylesheet" href="http://www.tjaart.co.za/css/highlight.min.css">
+    <link rel="stylesheet" href="http://www.tjaart.co.za/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://www.tjaart.co.za/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://www.tjaart.co.za/css/academicons.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
+    <link rel="stylesheet" href="http://www.tjaart.co.za/css/hugo-academic.css">
+    
+
+
+    <link rel="shortcut icon" href="http://www.tjaart.co.za/img/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="http://www.tjaart.co.za/post/gpg_with_ssh/">
+
+    <title>Using gpg-agent to cache your ssh passphrase | Tjaart&#39;s homepage</title>
+
+</head>
+<body id="top">
+
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+    <div class="container">
+
+        
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.tjaart.co.za/">Tjaart&#39;s homepage</a>
+        </div>
+
+        
+        <div class="collapse navbar-collapse" id="#navbar-collapse-1">
+
+            
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li class="nav-item"><a href="http://www.tjaart.co.za/#top">Home</a></li>
+                
+                <li class="nav-item"><a href="http://www.tjaart.co.za/#posts">Posts</a></li>
+                
+                <li class="nav-item"><a href="http://www.tjaart.co.za/#photos">Photos</a></li>
+                
+                <li class="nav-item"><a href="http://www.tjaart.co.za/#projects">Projects</a></li>
+                
+                <li class="nav-item"><a href="http://www.tjaart.co.za//resume.pdf">Resumé</a></li>
+                
+                <li class="nav-item"><a href="http://www.tjaart.co.za/#contact">Contact</a></li>
+                
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        
+
+        <h1 itemprop="name">Using gpg-agent to cache your ssh passphrase</h1>
+
+        
+
+<div class="article-metadata">
+
+    <span class="article-date">
+        <time datetime="2015-06-03 18:26:24 &#43;0000 UTC" itemprop="datePublished">Wed, Jun 3, 2015</time>
+    </span>
+
+    
+    
+    
+    <span class="article-tags">
+        <i class="fa fa-tags"></i>
+        
+        <a class="article-tag-link" href="http://www.tjaart.co.za/tags/linux">linux</a>
+        
+    </span>
+    
+    
+
+    
+        
+<div class="share-box">
+    <ul class="share">
+        <li>
+            <a class="facebook" href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.tjaart.co.za%2fpost%2fgpg_with_ssh%2f" target="_blank">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </li>
+        <li>
+            <a class="twitter" href="https://twitter.com/intent/tweet?text=Using%20gpg-agent%20to%20cache%20your%20ssh%20passphrase&amp;url=http%3a%2f%2fwww.tjaart.co.za%2fpost%2fgpg_with_ssh%2f" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        <li>
+            <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.tjaart.co.za%2fpost%2fgpg_with_ssh%2f&amp;title=Using%20gpg-agent%20to%20cache%20your%20ssh%20passphrase" target="_blank">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </li>
+        <li>
+            <a class="weibo" href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.tjaart.co.za%2fpost%2fgpg_with_ssh%2f&amp;title=Using%20gpg-agent%20to%20cache%20your%20ssh%20passphrase" target="_blank">
+                <i class="fa fa-weibo"></i>
+            </a>
+        </li>
+        <li>
+            <a class="email" href="mailto:?subject=Using%20gpg-agent%20to%20cache%20your%20ssh%20passphrase&amp;body=http%3a%2f%2fwww.tjaart.co.za%2fpost%2fgpg_with_ssh%2f">
+                <i class="fa fa-envelope"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+    
+
+</div>
+
+
+        <div class="article-style" itemprop="articleBody">
+            
+
+<blockquote>
+<p><strong>UPDATE 2015-08-26</strong></p>
+
+<p>This method described here is tricky to get working, and I think it could cause problems in future when I have forgotten the details. I have reverted to the standard config of using <code>gpg-agent</code> for gpg-keys, and <code>ssh-agent</code> for ssh-keys. In addition I now use <a href="http://www.funtoo.org/Keychain">keychain</a> to cache the passwords for both of the agents. This way I have my encrypted private keys, I don&rsquo;t have any non-standard configuration, and I only have to type in my passwords once for each session.</p>
+</blockquote>
+
+<p>Recently I was thinking about a backup strategy for <code>$HOME</code>. A big problem for me is how to backup my private keys safely. I found some inspiration after reading <a href="https://help.github.com/articles/working-with-ssh-key-passphrases/">this</a> GitHub article. I would encrypt my private key with a passphrase, and could then back it up with more confidence.</p>
+
+<p>A problem for me is that I have grown accustomed to using my unencrypted ssh key to authenticate to Git servers. I did not want to have to type my passphrase with each access. Luckily, as stated in the GitHub article you can use <code>ssh-agent</code> to securely cache your passphrase. However since I was already using GnuPG for encrypting my website passwords I wondered if I could use that to cache my passwords instead of ssh-agent. I found a Arch Wiki <a href="https://wiki.archlinux.org/index.php/SSH_keys#GnuPG_Agent">article</a> that explains how this can be done. I could not follow all the steps exactly. Here is a brief explanation of how I configured <code>gpg-agent</code> to cache my ssh passphrase.</p>
+
+<h1 id="configure-gpg-agent-to-support-ssh">Configure gpg-agent to support ssh</h1>
+
+<p>You will need to edit/create the configuration file <code>~/.gnupg/gpg-agent.conf</code> to <em>enable-ssh-support</em>. I also increased the default <em>time to live</em> for my cached passwords to 12 hours.</p>
+
+<pre><code># ssh support
+enable-ssh-support
+
+# Cache settings. (Caches for 12 hours)
+default-cache-ttl 43200
+default-cache-ttl-ssh 43200
+</code></pre>
+
+<h1 id="start-gpg-agent">Start gpg-agent</h1>
+
+<p>Your gpg-agent needs to be started if you want to use it to cache your ssh passphrase. Since I am using <em>systemd</em> I created a user service. The file is located at <code>~/.config/systemd/user/gpg-agent.service</code></p>
+
+<pre><code>[Unit]
+Description=GnuPG private key agent
+IgnoreOnIsolate=true
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/gpg-agent --daemon
+ExecStop=/usr/bin/pkill gpg-agent
+Restart=on-abort
+</code></pre>
+
+<h1 id="export-ssh">export SSH</h1>
+
+<p>You also need to export the <code>SSH_AUTH_SOCK</code> environment variable with the value of the <em>gpg-agent</em> socket. For version 2 of GnuPG it looks like this:</p>
+
+<pre><code>export SSH_AUTH_SOCK=~/.gnupg/S.gpg-agent.ssh
+</code></pre>
+
+<p>Since I am using zsh I added this line to my <code>~/.zshrc</code> file.</p>
+
+<h1 id="run-ssh-add">Run ssh-add</h1>
+
+<p>Once the configuration is done, you need to run <code>ssh-add</code> once to cache the passphrase. Once you have entered the <code>ssh passphrase</code> the gpg-agent will popup prompting you for a <code>gpg passphrase</code> that will encrypt your <code>ssh passphrase</code>.</p>
+
+<p>This seems a bit complicated, but in future you will be prompted for your <code>gpg passphrase</code> when you try to access your ssh key. Your <code>ssh passphrase</code> will get cached for <code>default-cache-ttl-ssh</code> seconds, and you will not get prompted for a passphrase again until the ttl expires.</p>
+
+        </div>
+
+    </article>
+
+    <nav>
+    <ul class="pager">
+        
+        <li class="previous"><a href="http://www.tjaart.co.za/post/ergodox/"><span aria-hidden="true">&larr;</span> Building my ergodox</a></li>
+        
+
+        
+        <li class="next"><a href="http://www.tjaart.co.za/post/org_mode/">The problem with Org mode <span aria-hidden="true">&rarr;</span></a></li>
+        
+    </ul>
+</nav>
+
+    
+<section id="comments">
+    <div id="disqus_thread">
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'spf13';
+    var disqus_identifier = 'http:\/\/www.tjaart.co.za\/post\/gpg_with_ssh\/';
+    var disqus_title = 'Using gpg-agent to cache your ssh passphrase';
+    var disqus_url = 'http:\/\/www.tjaart.co.za\/post\/gpg_with_ssh\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+</section>
+
+
+
+</div>
+<footer class="site-footer">
+    <div class="container">
+        <p class="powered-by">
+
+            &copy; 2016 Tjaart van der Walt &middot; 
+
+            Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+            <span class="pull-right"><a href="#" id="back_to_top"><span class="button_icon"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></span></a></span>
+
+        </p>
+    </div>
+</footer>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+        <script src="http://www.tjaart.co.za/js/jquery-1.12.3.min.js"></script>
+        <script src="http://www.tjaart.co.za/js/bootstrap.min.js"></script>
+        <script src="http://www.tjaart.co.za/js/hugo-academic.js"></script>
+        
+
+        
+
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+        
+        
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+        </script>
+        <script async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
+        
+
+    </body>
+</html>
+

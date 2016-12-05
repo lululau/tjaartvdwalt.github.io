@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tjaart&#39;s homepage</title>
+    <link>http://www.tjaart.co.za/tags/linux/index.xml</link>
+    <description>Recent content on Tjaart&#39;s homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Tjaart van der Walt</copyright>
+    <atom:link href="http://www.tjaart.co.za/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Using gpg-agent to cache your ssh passphrase</title>
+      <link>http://www.tjaart.co.za/post/gpg_with_ssh/</link>
+      <pubDate>Wed, 03 Jun 2015 18:26:24 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/post/gpg_with_ssh/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;UPDATE 2015-08-26&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This method described here is tricky to get working, and I think it could cause problems in future when I have forgotten the details. I have reverted to the standard config of using &lt;code&gt;gpg-agent&lt;/code&gt; for gpg-keys, and &lt;code&gt;ssh-agent&lt;/code&gt; for ssh-keys. In addition I now use &lt;a href=&#34;http://www.funtoo.org/Keychain&#34;&gt;keychain&lt;/a&gt; to cache the passwords for both of the agents. This way I have my encrypted private keys, I don&amp;rsquo;t have any non-standard configuration, and I only have to type in my passwords once for each session.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Recently I was thinking about a backup strategy for &lt;code&gt;$HOME&lt;/code&gt;. A big problem for me is how to backup my private keys safely. I found some inspiration after reading &lt;a href=&#34;https://help.github.com/articles/working-with-ssh-key-passphrases/&#34;&gt;this&lt;/a&gt; GitHub article. I would encrypt my private key with a passphrase, and could then back it up with more confidence.&lt;/p&gt;
+
+&lt;p&gt;A problem for me is that I have grown accustomed to using my unencrypted ssh key to authenticate to Git servers. I did not want to have to type my passphrase with each access. Luckily, as stated in the GitHub article you can use &lt;code&gt;ssh-agent&lt;/code&gt; to securely cache your passphrase. However since I was already using GnuPG for encrypting my website passwords I wondered if I could use that to cache my passwords instead of ssh-agent. I found a Arch Wiki &lt;a href=&#34;https://wiki.archlinux.org/index.php/SSH_keys#GnuPG_Agent&#34;&gt;article&lt;/a&gt; that explains how this can be done. I could not follow all the steps exactly. Here is a brief explanation of how I configured &lt;code&gt;gpg-agent&lt;/code&gt; to cache my ssh passphrase.&lt;/p&gt;
+
+&lt;h1 id=&#34;configure-gpg-agent-to-support-ssh&#34;&gt;Configure gpg-agent to support ssh&lt;/h1&gt;
+
+&lt;p&gt;You will need to edit/create the configuration file &lt;code&gt;~/.gnupg/gpg-agent.conf&lt;/code&gt; to &lt;em&gt;enable-ssh-support&lt;/em&gt;. I also increased the default &lt;em&gt;time to live&lt;/em&gt; for my cached passwords to 12 hours.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# ssh support
+enable-ssh-support
+
+# Cache settings. (Caches for 12 hours)
+default-cache-ttl 43200
+default-cache-ttl-ssh 43200
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;start-gpg-agent&#34;&gt;Start gpg-agent&lt;/h1&gt;
+
+&lt;p&gt;Your gpg-agent needs to be started if you want to use it to cache your ssh passphrase. Since I am using &lt;em&gt;systemd&lt;/em&gt; I created a user service. The file is located at &lt;code&gt;~/.config/systemd/user/gpg-agent.service&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[Unit]
+Description=GnuPG private key agent
+IgnoreOnIsolate=true
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/gpg-agent --daemon
+ExecStop=/usr/bin/pkill gpg-agent
+Restart=on-abort
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;export-ssh&#34;&gt;export SSH&lt;/h1&gt;
+
+&lt;p&gt;You also need to export the &lt;code&gt;SSH_AUTH_SOCK&lt;/code&gt; environment variable with the value of the &lt;em&gt;gpg-agent&lt;/em&gt; socket. For version 2 of GnuPG it looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export SSH_AUTH_SOCK=~/.gnupg/S.gpg-agent.ssh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Since I am using zsh I added this line to my &lt;code&gt;~/.zshrc&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;h1 id=&#34;run-ssh-add&#34;&gt;Run ssh-add&lt;/h1&gt;
+
+&lt;p&gt;Once the configuration is done, you need to run &lt;code&gt;ssh-add&lt;/code&gt; once to cache the passphrase. Once you have entered the &lt;code&gt;ssh passphrase&lt;/code&gt; the gpg-agent will popup prompting you for a &lt;code&gt;gpg passphrase&lt;/code&gt; that will encrypt your &lt;code&gt;ssh passphrase&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;This seems a bit complicated, but in future you will be prompted for your &lt;code&gt;gpg passphrase&lt;/code&gt; when you try to access your ssh key. Your &lt;code&gt;ssh passphrase&lt;/code&gt; will get cached for &lt;code&gt;default-cache-ttl-ssh&lt;/code&gt; seconds, and you will not get prompted for a passphrase again until the ttl expires.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Flash plugin on Firefox for Linux</title>
+      <link>http://www.tjaart.co.za/post/firefox/</link>
+      <pubDate>Sat, 18 Apr 2015 09:56:36 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/post/firefox/</guid>
+      <description>
+
+&lt;h1 id=&#34;the-problem&#34;&gt;The problem&lt;/h1&gt;
+
+&lt;p&gt;I have been struggling with speed issues with Firefox on Linux for a long time.&lt;/p&gt;
+
+&lt;p&gt;Firefox forms a central part of my browsing workflow because I use &lt;a href=&#34;http://www.passwordstore.org/&#34;&gt;pass&lt;/a&gt; to save my passwords, and the &lt;a href=&#34;https://github.com/jvenant/passff#readme&#34;&gt;passff&lt;/a&gt; Firefox plugin to fill forms. To my knowledge there is no plugin for Chrome compatible with pass. (I previously used &lt;code&gt;Keepass&lt;/code&gt;, but I did not like the fact that it is really a Windows app ported for Linux, and that it ties you to its gui interface. Pass does things the Unix way, and I like that.)&lt;/p&gt;
+
+&lt;p&gt;I always had the suspicion that my speed issues were due to the fact that my Flash plugin was grossly out of date. (If you are a Linux user you will probably know that Adobe stopped supporting the Flash plugin for Linux a few years ago.)&lt;/p&gt;
+
+&lt;p&gt;For Linux users the only way to have an up to date Flash plugin is to use the &lt;code&gt;Pepperflash plugin&lt;/code&gt; that ships with Google Chrome. The Firefox developers however do not want to &lt;a href=&#34;http://www.internetnews.com/blog/skerner/mozilla-doesnt-want-pepper-for-linux-flash.html&#34;&gt;adopt this approach&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;the-solution&#34;&gt;The solution&lt;/h1&gt;
+
+&lt;p&gt;A couple of days ago my browser was incredibly slow once again and I began to look around for a way to use Pepperflash with Firefox, and I found &lt;a href=&#34;https://github.com/i-rinat/freshplayerplugin&#34;&gt;freshplayerplugin&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;On Arch Linux it was super simple to install it from the AUR:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;yaourt -S freshplayerplugin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I also removed the old Adobe flash plugin:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;yaourt -S flashplugin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2 days in, and my Firefox is feeling much more responsive.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Post-rsses on Tjaart&#39;s homepage</title>
+    <link>http://www.tjaart.co.za/post/index.xml</link>
+    <description>Recent content in Post-rsses on Tjaart&#39;s homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Tjaart van der Walt</copyright>
+    <lastBuildDate>Mon, 05 Dec 2016 10:07:45 +0000</lastBuildDate>
+    <atom:link href="http://www.tjaart.co.za/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A critique of email clients</title>
+      <link>http://www.tjaart.co.za/post/critique_of_email_clients/</link>
+      <pubDate>Mon, 05 Dec 2016 10:07:45 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/post/critique_of_email_clients/</guid>
+      <description>
+
+&lt;p&gt;This might sound crazy, but in 2016, but I have not found an email client that I really want to use.&lt;/p&gt;
+
+&lt;p&gt;Let me walk through the mail clients I have tried, what are good about them, and what I would like to see changed.&lt;/p&gt;
+
+&lt;h2 id=&#34;critisism-of-current-clients&#34;&gt;Critisism of current clients&lt;/h2&gt;
+
+&lt;h3 id=&#34;thunderbird&#34;&gt;Thunderbird&lt;/h3&gt;
+
+&lt;p&gt;I really like Thunderbird, but I do think Mozilla does not give it the attention it deserves, and it seems to play second fiddle to Firefox. For example, it uses the same plugin architecture as Firefox, but the available plugins are not comparable in number or quality to that of Firefox. In some cases it also allows you to install &amp;ldquo;Firefox specific&amp;rdquo; plugins that do not really work in the Thunderbird context. It also lacks a mobile companion.&lt;/p&gt;
+
+&lt;h3 id=&#34;gmail&#34;&gt;GMail&lt;/h3&gt;
+
+&lt;p&gt;When I talk about GMail I really refer to 2 separate things: The GMail web client, and the mobile applications for Android/iOS.&lt;/p&gt;
+
+&lt;p&gt;On the web client: NO! Stop it! You should not read your email in a browser!&lt;/p&gt;
+
+&lt;p&gt;My main criticism of the web client is that it only works for GMail managed domains, and you can only view one mailbox at a time, so no unified inbox. It also does not have a plugin system (other than some experimental features Google allows you to enable manually).&lt;/p&gt;
+
+&lt;p&gt;On the mobile client: I really like it. After a recent update, you can use it as a POP/IMAP client for arbitrary mailboxes, giving you the unified inbox lacking in the web client. But alas, it does not support plugins. Using the web and the mobile client together, or even using Thunderbird with the mobile client is a fairly good option, but you have to live with the fact that each have different capabilities, making your experience much different based on the platform.&lt;/p&gt;
+
+&lt;h3 id=&#34;k9-mail&#34;&gt;K9 Mail&lt;/h3&gt;
+
+&lt;p&gt;This is a lesser known, but great, email client for Android. Unfortunately it is only available for the one platform.&lt;/p&gt;
+
+&lt;h3 id=&#34;mu&#34;&gt;mu&lt;/h3&gt;
+
+&lt;p&gt;Not many people outside of the Emacs community would have heard of this, but it used to be my primary email client for a number of years. It is likely the most customizable &amp;ldquo;email searcher&amp;rdquo; ever. You can write elisp functions to accomplish just about anything. It does have problems though:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;It does not handle the downloading of mail, for that you have to use an external mail synchronization tool such as offlineImap or mbsync.&lt;/li&gt;
+&lt;li&gt;You are tied to Emacs. It goes without saying that there is no mobile version.&lt;/li&gt;
+&lt;li&gt;Its not exactly what I would call &amp;ldquo;modern&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Tinkering with configuration takes a lot of time, and sharing configuration is not always simple.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;my-ideal-mail-client&#34;&gt;My ideal mail client&lt;/h2&gt;
+
+&lt;p&gt;Taking all of these criticisms into consideration, what would my perfect mail client to look like?&lt;/p&gt;
+
+&lt;h3 id=&#34;it-should-work-on-most-platforms&#34;&gt;It should work on most platforms&lt;/h3&gt;
+
+&lt;p&gt;It should have a mobile, desktop and web interface. Ideally it should also be easily portable to new platforms. As far as possible these interfaces should have similar capabilities.&lt;/p&gt;
+
+&lt;h3 id=&#34;it-should-be-extensible&#34;&gt;It should be extensible&lt;/h3&gt;
+
+&lt;p&gt;In my mind &lt;code&gt;mu&lt;/code&gt;  sets the bar that any mail client should be measured against when it comes to extensibility. Unfortunately it lacks a way to deliver these capabilities to users that do not want to spend their lives tinkering with email configuration.&lt;/p&gt;
+
+&lt;p&gt;I think we can learn a lot from how the Atom editor approached a similar problem in the text editor space. They harnessed the good parts of Emacs/Vim, while making it more accessible to modern users (who do not have the same type of patience with computers we had in the 1980&amp;rsquo;s).&lt;/p&gt;
+
+&lt;h3 id=&#34;it-should-be-free&#34;&gt;It should be Free&lt;/h3&gt;
+
+&lt;p&gt;Call it Open Sourced if you like. I believe the developer community will rally around a well implemented free mail client, similar to how Telegram achieved success, in the face of proprietary messaging systems like Whatsapp.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Implementing App Transport Security on NodeJS</title>
+      <link>http://www.tjaart.co.za/post/implementing_app_transport_security_on_nodejs/</link>
+      <pubDate>Thu, 01 Oct 2015 13:48:22 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/post/implementing_app_transport_security_on_nodejs/</guid>
+      <description>
+
+&lt;h1 id=&#34;what-is-app-transport-security&#34;&gt;What is App Transport Security?&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/&#34;&gt;ATS&lt;/a&gt; is Apple&amp;rsquo;s term for a set of &amp;ldquo;best practice&amp;rdquo; minimum security requirements that must be met in order for a client to establish a connection with a server. ATS is being enforced by default on &lt;code&gt;iOS 9&lt;/code&gt;, and &lt;code&gt;OSX 10.11&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;On Stackoverflow respondents will tell you that &lt;code&gt;ATS = TLS 1.2&lt;/code&gt;, but this is only partly true. ATS actually has 3 requirements:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The server should support at least &lt;code&gt;TLS 1.2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;The server should only support connection ciphers that provide &lt;code&gt;forward secrecy&lt;/code&gt; (See the &lt;a href=&#34;https://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/&#34;&gt;complete list&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Certificates needs to be signed with SHA-256, and use at least a 2048-bit RSA  key (or 256-bit ECC key)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;my-experience-implementing-ats&#34;&gt;My experience implementing ATS&lt;/h1&gt;
+
+&lt;h2 id=&#34;diagnosing-problems&#34;&gt;Diagnosing problems&lt;/h2&gt;
+
+&lt;p&gt;Implementing ATS is actually pretty straight forward, but it took me a couple of days to get right. This was mostly due to my ignorance on network security. (In my defence I would note that the client gave supremely unhelpful error messages). Being able to diagnose the problem was the biggest challenge for me. Here are a few tools I found quite useful:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;On Mac OSX 10.11 (El Capitan) you can use &lt;code&gt;nscurl --ats-diagnostics https://example.com&lt;/code&gt; to give you ATS diagnostic information.&lt;/li&gt;
+&lt;li&gt;I also found &lt;a href=&#34;https://casecurity.ssllabs.com/&#34;&gt;https://casecurity.ssllabs.com/&lt;/a&gt; extremely useful.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;implementation&#34;&gt;Implementation&lt;/h2&gt;
+
+&lt;p&gt;Implementing ATS in Node is simple. A minimal implementation might look something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var https = require(&#39;https&#39;)
+var fs = require(&#39;fs&#39;)
+
+var privateKey = fs.readFileSync(&#39;/path/to/my/private/key&#39;, &#39;utf8&#39;)
+var certificate = fs.readFileSync(&#39;/path/to/my/certificate&#39;, &#39;utf8&#39;)
+
+var credentials = {
+  key: privateKey,
+  cert: certificate,
+  ciphers: &#39;ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA256:ECDHE-RSA-AES128-SHA&#39;
+}
+
+server = https.createServer(credentials, app)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;my-mistakes&#34;&gt;My mistakes&lt;/h2&gt;
+
+&lt;h3 id=&#34;certificate-chain&#34;&gt;Certificate chain&lt;/h3&gt;
+
+&lt;p&gt;I am not sure if this was breaking ATS, but &lt;a href=&#34;https://casecurity.ssllabs.com/&#34;&gt;casecurity.sslabs.com&lt;/a&gt;, reported that I was not providing the complete certificate chain, but only the client certificate.&lt;/p&gt;
+
+&lt;p&gt;I was using a certificate issued by &lt;a href=&#34;https://www.godaddy.com/&#34;&gt;Godaddy&lt;/a&gt;, and I found the missing certificates in their &lt;a href=&#34;https://certs.godaddy.com/repository/&#34;&gt;certificate repository&lt;/a&gt;. To include the certificate in my server, I followed &lt;a href=&#34;http://nginx.org/en/docs/http/configuring_https_servers.html#chains&#34;&gt;this&lt;/a&gt; tutorial. As a short summary:  You basically concatenate the two certificates together into a single file, which you use as your certificate file.&lt;/p&gt;
+
+&lt;h3 id=&#34;cipher-mapping&#34;&gt;Cipher mapping&lt;/h3&gt;
+
+&lt;p&gt;You should only allow the list of accepted ciphers as described in the &lt;a href=&#34;https://developer.apple.com/library/prerelease/ios/technotes/App-Transport-Security-Technote/#//apple_ref/doc/uid/TP40016240-CH1-SW3&#34;&gt;ATS technotes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A caveat is that this list provides the &lt;code&gt;Cipher Suite Name&lt;/code&gt;, but in the &lt;a href=&#34;https://nodejs.org/api/tls.html#tls_modifying_the_default_tls_cipher_suite&#34;&gt;Node  documentation&lt;/a&gt; they refer to the ciphers using their &lt;code&gt;OpenSSL names&lt;/code&gt;. I found the mapping to convert between the names &lt;a href=&#34;http://openssl.org/docs/manmaster/apps/ciphers.html&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;outdated-nodejs&#34;&gt;Outdated NodeJS&lt;/h3&gt;
+
+&lt;p&gt;Finally, and this took me the longest to resolve, I was using a very out of date version of &lt;code&gt;NodeJS&lt;/code&gt;. My server was running &lt;a href=&#34;http://releases.ubuntu.com/trusty/&#34;&gt;Ubuntu - Trusty Tahr&lt;/a&gt;, and I did a normal &lt;code&gt;apt-get install&lt;/code&gt;, which installed &lt;code&gt;node v0.10.40&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I do not know the minimum version for this configuration to work, but I would suggest installing the latest (&lt;code&gt;v4.1.1&lt;/code&gt; at the time of writing) using the method described in the &lt;a href=&#34;https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions&#34;&gt;node installation guide&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>photo_rename 0.1.1</title>
+      <link>http://www.tjaart.co.za/post/photo_rename/</link>
+      <pubDate>Wed, 02 Sep 2015 11:16:50 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/post/photo_rename/</guid>
+      <description>
+
+&lt;p&gt;I want to announce the release of version &lt;code&gt;0.1.1&lt;/code&gt; of my Free Software tool &lt;a href=&#34;https://github.com/tjaartvdwalt/photo_rename/&#34;&gt;photo_rename&lt;/a&gt;. To understand the importance of this release, you need to know some of its back story:&lt;/p&gt;
+
+&lt;h1 id=&#34;the-tragedy&#34;&gt;The tragedy&lt;/h1&gt;
+
+&lt;p&gt;A couple of years ago, in a comedy of errors, I accidentally deleted my photo albums from my computer. In a further twist, my off-site backup was not working correctly. I did not realize the mistake immediately, so traditional undelete tools could not recover the files, since I had written to the disk since the accident. Eventually I managed to save most of my images using &lt;a href=&#34;http://foremost.sourceforge.net/&#34;&gt;Foremost&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This is not a post on my recovery process, but, Foremost is a great little tool when other undelete methods are not available.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;the-manual-solution&#34;&gt;The manual solution&lt;/h1&gt;
+
+&lt;p&gt;The big problem I had after the recovery process was that &lt;code&gt;Foremost&lt;/code&gt; could not recover the original file names. This meant that I had a pile of 29685 images, all with generic file names, all in a single directory, to sort through. This was a massive undertaking, but my wife and I sorted the images into different albums based on what we could remember. We did not try to change the file names individually, because (even with my perfectionist tendencies) we would have gone insane.&lt;/p&gt;
+
+&lt;h1 id=&#34;a-side-project&#34;&gt;A side project&lt;/h1&gt;
+
+&lt;p&gt;Some time after this, I wrote &lt;code&gt;photo_rename&lt;/code&gt; . This tool renames images into what is essentially the &lt;em&gt;Android Stock Camera&lt;/em&gt; naming scheme: &lt;code&gt;IMG_yyyymmdd_hhmmss.jpg&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The reason I wrote  this was that my wife and I were taking photos on multiple devices. We wanted to consolidate the images into a single album, but because our devices used different naming schemes the files would not be chronologically ordered when we browse the album.&lt;/p&gt;
+
+&lt;p&gt;From the start of this project  I had thought about fixing my recovered photo names using this tool, but my initial version used the JPEG file&amp;rsquo;s &lt;code&gt;mtime&lt;/code&gt; property to extract the file creation date. For my recovered photos this would be the date and time on which they were recovered, not the date on which they were taken. This was not the solution I was looking for.&lt;/p&gt;
+
+&lt;h1 id=&#34;i-love-it-when-a-plan-comes-together&#34;&gt;&amp;ldquo;I love it when a plan comes together&amp;rdquo;&lt;/h1&gt;
+
+&lt;p&gt;Finally, today, I released version &lt;code&gt;0.1.1&lt;/code&gt; of &lt;code&gt;photo_rename&lt;/code&gt; which solves this issue. The tool now uses the &lt;em&gt;exif meta data&lt;/em&gt; that is embedded inside the JPEG image in order to create the new filename. This method is much more reliable, as this date is not as easily changed as the &lt;code&gt;mtime&lt;/code&gt;. Finally, after almost two years, I can put this issue to rest.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The problem with Org mode</title>
+      <link>http://www.tjaart.co.za/post/org_mode/</link>
+      <pubDate>Fri, 28 Aug 2015 10:24:58 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/post/org_mode/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;I know that my ideas in this article will be hated by many staunch Org mode supporters. I still believe I am right.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For the last few years I have been using the Emacs plugin &lt;a href=&#34;http://orgmode.org/&#34;&gt;Org mode&lt;/a&gt;. This is an amazing text outliner tool that can do just about anything. As a student I used it to create Latex document, Latex Beamers, project websites etc. Its coolness knows no bounds, you can even create a spreadsheet in plain text!&lt;/p&gt;
+
+&lt;p&gt;Despite it being such an amazing tool, Org mode has some serious problems:&lt;/p&gt;
+
+&lt;h1 id=&#34;it-does-not-use-markdown-syntax&#34;&gt;It does not use Markdown syntax.&lt;/h1&gt;
+
+&lt;p&gt;Ok, so this is probably not really a valid point, since Org mode predates Markdown. Unfortunately, today, Markdown is everywhere. &lt;strong&gt;A lot&lt;/strong&gt; of people know the syntax and are writing tools supporting the syntax.&lt;/p&gt;
+
+&lt;p&gt;For almost 3 years I was a loyal Org mode supporter, opting to use Org mode instead of Markdown syntax whenever possible:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;On Github I would replace &lt;code&gt;README.md&lt;/code&gt; with &lt;code&gt;README.org&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;I even wrote a &lt;a href=&#34;https://github.com/tjaartvdwalt/jekyll-org-mode-converter&#34;&gt;Jekyll Org mode converter&lt;/a&gt; for converting Org mode to HTML (I used this in the previous incarnation of this website.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The problem with writing Org mode &lt;code&gt;README&lt;/code&gt;&amp;rsquo;s is that it makes collaboration difficult with people that know only Markdown. Github is also the only site I know of that will even render Org mode online. (Bitbucket, for example, doesn&amp;rsquo;t)&lt;/p&gt;
+
+&lt;p&gt;The problem with my Jekyll plugin is that it increases the complexity of publishing to Github Pages. Github, for obvious reasons, do not allow custom plugins in their build. This means that if you want to use my plugin you need to build the site locally, and then commit the HTML to &lt;code&gt;master&lt;/code&gt;. You probably also want to commit the source somewhere, so you create a different branch and commit it there.&lt;/p&gt;
+
+&lt;p&gt;If you use Markdown syntax however, Github will build the HTML from the source directly. You just commit your source to &lt;code&gt;master&lt;/code&gt; and Github takes care of the rest.&lt;/p&gt;
+
+&lt;h1 id=&#34;it-is-too-tightly-integrated-with-emacs&#34;&gt;It is too tightly integrated with Emacs&lt;/h1&gt;
+
+&lt;p&gt;Another problem with Org mode is that it is so tightly integrated with Emacs. My major issue with this is that it prohibits collaboration. I cannot simply give my Org mode source to a non Emacs using friend and explain to them what to install, and what command to run in order to compile it. I would first need to give them about a six months worth of Emacs lessons for them to be able to use it.&lt;/p&gt;
+
+&lt;h1 id=&#34;the-answer&#34;&gt;The answer&lt;/h1&gt;
+
+&lt;p&gt;About a month ago I got tired of swimming upstream, and started embracing Markdown instead of Org mode wherever possible. So far this has been a liberating experience.&lt;/p&gt;
+
+&lt;p&gt;If I was the Org mode author, I would look for a way to switch to Markdown syntax, &lt;code&gt;Org mode flavored Markdown&lt;/code&gt; if you like. I would keep the Org mode features that Markdown lack, like tables. You could maintain a &amp;lsquo;legacy mode&amp;rsquo; for old Org mode styled documents.&lt;/p&gt;
+
+&lt;p&gt;I would also extract as much of the Org mode core as possible from Emacs lisp code. I would rewrite it into a modern programming language. (Python or Javascript seem like obvious choices) This would give me the possibility of more collaborators getting involved. I would then write Org mode plugins for Emacs, and one other editor (Vim or Atom).&lt;/p&gt;
+
+&lt;p&gt;Org mode is a great tool. It has the potential to revolutionize the way we do text editing, but it needs revolutionary thinking to get it there.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using gpg-agent to cache your ssh passphrase</title>
+      <link>http://www.tjaart.co.za/post/gpg_with_ssh/</link>
+      <pubDate>Wed, 03 Jun 2015 18:26:24 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/post/gpg_with_ssh/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;UPDATE 2015-08-26&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This method described here is tricky to get working, and I think it could cause problems in future when I have forgotten the details. I have reverted to the standard config of using &lt;code&gt;gpg-agent&lt;/code&gt; for gpg-keys, and &lt;code&gt;ssh-agent&lt;/code&gt; for ssh-keys. In addition I now use &lt;a href=&#34;http://www.funtoo.org/Keychain&#34;&gt;keychain&lt;/a&gt; to cache the passwords for both of the agents. This way I have my encrypted private keys, I don&amp;rsquo;t have any non-standard configuration, and I only have to type in my passwords once for each session.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Recently I was thinking about a backup strategy for &lt;code&gt;$HOME&lt;/code&gt;. A big problem for me is how to backup my private keys safely. I found some inspiration after reading &lt;a href=&#34;https://help.github.com/articles/working-with-ssh-key-passphrases/&#34;&gt;this&lt;/a&gt; GitHub article. I would encrypt my private key with a passphrase, and could then back it up with more confidence.&lt;/p&gt;
+
+&lt;p&gt;A problem for me is that I have grown accustomed to using my unencrypted ssh key to authenticate to Git servers. I did not want to have to type my passphrase with each access. Luckily, as stated in the GitHub article you can use &lt;code&gt;ssh-agent&lt;/code&gt; to securely cache your passphrase. However since I was already using GnuPG for encrypting my website passwords I wondered if I could use that to cache my passwords instead of ssh-agent. I found a Arch Wiki &lt;a href=&#34;https://wiki.archlinux.org/index.php/SSH_keys#GnuPG_Agent&#34;&gt;article&lt;/a&gt; that explains how this can be done. I could not follow all the steps exactly. Here is a brief explanation of how I configured &lt;code&gt;gpg-agent&lt;/code&gt; to cache my ssh passphrase.&lt;/p&gt;
+
+&lt;h1 id=&#34;configure-gpg-agent-to-support-ssh&#34;&gt;Configure gpg-agent to support ssh&lt;/h1&gt;
+
+&lt;p&gt;You will need to edit/create the configuration file &lt;code&gt;~/.gnupg/gpg-agent.conf&lt;/code&gt; to &lt;em&gt;enable-ssh-support&lt;/em&gt;. I also increased the default &lt;em&gt;time to live&lt;/em&gt; for my cached passwords to 12 hours.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# ssh support
+enable-ssh-support
+
+# Cache settings. (Caches for 12 hours)
+default-cache-ttl 43200
+default-cache-ttl-ssh 43200
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;start-gpg-agent&#34;&gt;Start gpg-agent&lt;/h1&gt;
+
+&lt;p&gt;Your gpg-agent needs to be started if you want to use it to cache your ssh passphrase. Since I am using &lt;em&gt;systemd&lt;/em&gt; I created a user service. The file is located at &lt;code&gt;~/.config/systemd/user/gpg-agent.service&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[Unit]
+Description=GnuPG private key agent
+IgnoreOnIsolate=true
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/gpg-agent --daemon
+ExecStop=/usr/bin/pkill gpg-agent
+Restart=on-abort
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;export-ssh&#34;&gt;export SSH&lt;/h1&gt;
+
+&lt;p&gt;You also need to export the &lt;code&gt;SSH_AUTH_SOCK&lt;/code&gt; environment variable with the value of the &lt;em&gt;gpg-agent&lt;/em&gt; socket. For version 2 of GnuPG it looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export SSH_AUTH_SOCK=~/.gnupg/S.gpg-agent.ssh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Since I am using zsh I added this line to my &lt;code&gt;~/.zshrc&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;h1 id=&#34;run-ssh-add&#34;&gt;Run ssh-add&lt;/h1&gt;
+
+&lt;p&gt;Once the configuration is done, you need to run &lt;code&gt;ssh-add&lt;/code&gt; once to cache the passphrase. Once you have entered the &lt;code&gt;ssh passphrase&lt;/code&gt; the gpg-agent will popup prompting you for a &lt;code&gt;gpg passphrase&lt;/code&gt; that will encrypt your &lt;code&gt;ssh passphrase&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;This seems a bit complicated, but in future you will be prompted for your &lt;code&gt;gpg passphrase&lt;/code&gt; when you try to access your ssh key. Your &lt;code&gt;ssh passphrase&lt;/code&gt; will get cached for &lt;code&gt;default-cache-ttl-ssh&lt;/code&gt; seconds, and you will not get prompted for a passphrase again until the ttl expires.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Building my ergodox</title>
+      <link>http://www.tjaart.co.za/post/ergodox/</link>
+      <pubDate>Thu, 28 May 2015 11:46:48 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/post/ergodox/</guid>
+      <description>
+
+&lt;p&gt;In this post I give a short description of how I built my ergodox:&lt;/p&gt;
+
+&lt;h1 id=&#34;sourcing-parts&#34;&gt;Sourcing parts&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I bought the &lt;a href=&#34;http://mechanicalkeyboards.com/shop/index.php?l%3Dproduct_detail&amp;amp;p%3D537&#34;&gt;PCB&lt;/a&gt;, &lt;a href=&#34;http://mechanicalkeyboards.com/shop/index.php?l%3Dproduct_detail&amp;amp;p%3D1034&#34;&gt;key switches&lt;/a&gt; and &lt;a href=&#34;http://mechanicalkeyboards.com/shop/index.php?l%3Dproduct_detail&amp;amp;p%3D568&#34;&gt;teensy&lt;/a&gt; from &lt;a href=&#34;http://mechanicalkeyboards.com&#34;&gt;mechanicalkeyboards.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The rest of the electronic components I bought from &lt;a href=&#34;http://www.digikey.com&#34;&gt;digikey&lt;/a&gt;, by following the links from &lt;a href=&#34;http://ergodox.org/Hardware.aspx&#34;&gt;the ergodox website&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;I bought a TRRS connector from &lt;a href=&#34;http://www.mycablemart.com/store/cart.php?m%3Dproduct_detail&amp;amp;p%3D5021&#34;&gt;mycablemart&lt;/a&gt;. (see the Problems (See section ) section below)&lt;/li&gt;
+&lt;li&gt;I bought the key caps from &lt;a href=&#34;http://keyshop.pimpmykeyboard.com/products/full-keysets/dsa-blank-sets-1&#34;&gt;signature plastics&lt;/a&gt;. With this set you get 2 deep dish keys (for F and J) which the massdrop kits do not include.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All and all the cost was around $170 without a case.&lt;/p&gt;
+
+&lt;h1 id=&#34;build-process&#34;&gt;Build process&lt;/h1&gt;
+
+&lt;p&gt;I basically followed the &lt;a href=&#34;https://www.massdrop.com/ext/ergodox/assembly&#34;&gt;assembly instructions&lt;/a&gt; on the massdrop website.
+I also watched a few youtube videos, but I didn&amp;rsquo;t find them helpful in general.
+The massdrop site had all I needed.&lt;/p&gt;
+
+&lt;p&gt;I haven&amp;rsquo;t soldered in since I was at school, so I watched &lt;a href=&#34;https://www.youtube.com/watch?v%3DJ5Sb21qbpEQ&#34;&gt;this&lt;/a&gt; series of youtube videos on proper soldering
+technique which was pretty useful.&lt;/p&gt;
+
+&lt;p&gt;I bought a cheap soldering iron for about $9. Even thought the auzzy in the video took
+great exception to this kind of iron, it did the job for me.&lt;/p&gt;
+
+&lt;p&gt;I used through-hole diodes instead of the surface mounted diodes shipped with massdrop kits.
+Reading the forums, I now think this was a good idea. Lots of people have difficulty doing the
+surface mounted soldering. The through-hole diodes was also quite a bit cheaper than the surface mounted diodes.
+I couldn&amp;rsquo;t find a proper picture of a through-hole mounted diode anywhere, so &lt;a href=&#34;https://raw.githubusercontent.com/tjaartvdwalt/ergodox/source/images/IMG_20150301_110514.jpg&#34;&gt;here&lt;/a&gt; is an amateur attempt.
+The cathode (side with the line) goes into the square pad. You should also use the bottom most pads,
+otherwise your soldering welds will interfere with the key switches.&lt;/p&gt;
+
+&lt;p&gt;I bought PCB mounted switches. I wanted to build by own case, and did not want to bother with plate mounting. The PCB I bought supported this, but apparently older iterations of the PCB did not. (You need to look for two holes on either side of the center hole where the key switch will sit) Only time will tell if this was a good decision.&lt;/p&gt;
+
+&lt;h1 id=&#34;case&#34;&gt;Case&lt;/h1&gt;
+
+&lt;p&gt;I did not like the PVC cases available from Massdrop and Mechanical Keyboards. The &lt;a href=&#34;http://falbatech.pl/prestashop/index.php?id_product%3D44&amp;amp;controller%3Dproduct&#34;&gt;case&lt;/a&gt; that I really liked is produced by Falbatech which is based in Europe. You could buy it through ebay, but shipping to the US was pretty expensive, so I decided to go for a home grown solution. A friend of mine helped me to fashion a case from oak. He had some scrap wood after redoing his stairs. We used a rotor to sink the PCB into the wood.&lt;/p&gt;
+
+&lt;h1 id=&#34;layout&#34;&gt;Layout&lt;/h1&gt;
+
+&lt;p&gt;One of the major reasons I chose Ergodox was for the fully customizable firmware.
+I have been using the Dvorak layout for a few years, and have grown tired of not having
+Dvorak available on machines that I do not own. Now I can simply plug in my Ergodox and
+start typing.&lt;/p&gt;
+
+&lt;p&gt;I used the massdrop &lt;a href=&#34;https://www.massdrop.com/ext/ergodox/&#34;&gt;layout configurator&lt;/a&gt; to help me visualize my layout. I would then export
+the result, and commit it into the firmware directory of this repository.&lt;/p&gt;
+
+&lt;p&gt;My primary concerns were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Use with Emacs (Ctrl and Alt should be easy to reach)&lt;/li&gt;
+&lt;li&gt;Use with i3 (Gui key should be easy to reach)&lt;/li&gt;
+&lt;li&gt;Arrow keys in inverted-T on right hand (For Ergodox I use a layer to achieve this. On other keyboards I use RAlt)&lt;/li&gt;
+&lt;li&gt;As few position changes as possible from normal (Dvorak-classic) layout.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.massdrop.com/ext/ergodox/?referer%3D3YWSU7&amp;amp;hash%3Df35e8ec2fe084fab51286fb76af9435f&#34;&gt;Here&lt;/a&gt; is what I came up with.&lt;/p&gt;
+
+&lt;h1 id=&#34;problems&#34;&gt;Problems&lt;/h1&gt;
+
+&lt;p&gt;My Ergodox build generally went smoothly. I only really had one problem which caused me a day of grief.
+Make sure you have a TRRS cable. Typical male-male plugs used for stereo equipment is TRS,
+and this will not work with the ergodox.&lt;/p&gt;
+
+&lt;p&gt;You can see the detailed description &lt;a href=&#34;https://geekhack.org/index.php?topic%3D69512.0&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;photos&#34;&gt;Photos&lt;/h1&gt;
+
+&lt;h2 id=&#34;pcb-with-the-diodes-soldered-onto-the-bottom-side&#34;&gt;PCB with the diodes soldered onto the bottom side&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tjaart.co.za/img/ergodox/pcb_diodes.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;close-up-of-diodes&#34;&gt;Close up of diodes&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tjaart.co.za/img/ergodox/diodes_zoom.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;key-switches-soldered-on&#34;&gt;Key switches soldered on&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tjaart.co.za/img/ergodox/key_switches.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;io-expander-ceramic-capacitor&#34;&gt;IO expander + ceramic capacitor&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tjaart.co.za/img/ergodox/io_expander.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;teensy-with-usb-pass-through&#34;&gt;Teensy with USB pass-through&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tjaart.co.za/img/ergodox/teensy.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;trrs-connector-with-wires-shorted-out&#34;&gt;TRRS connector with wires shorted out&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tjaart.co.za/img/ergodox/trrs.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;key-caps-from-signature-plastics&#34;&gt;Key caps from signature plastics&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tjaart.co.za/img/ergodox/key_caps.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;case-1&#34;&gt;Case&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tjaart.co.za/img/ergodox/case.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;typing&#34;&gt;Typing&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.tjaart.co.za/img/ergodox/typing.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Flash plugin on Firefox for Linux</title>
+      <link>http://www.tjaart.co.za/post/firefox/</link>
+      <pubDate>Sat, 18 Apr 2015 09:56:36 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/post/firefox/</guid>
+      <description>
+
+&lt;h1 id=&#34;the-problem&#34;&gt;The problem&lt;/h1&gt;
+
+&lt;p&gt;I have been struggling with speed issues with Firefox on Linux for a long time.&lt;/p&gt;
+
+&lt;p&gt;Firefox forms a central part of my browsing workflow because I use &lt;a href=&#34;http://www.passwordstore.org/&#34;&gt;pass&lt;/a&gt; to save my passwords, and the &lt;a href=&#34;https://github.com/jvenant/passff#readme&#34;&gt;passff&lt;/a&gt; Firefox plugin to fill forms. To my knowledge there is no plugin for Chrome compatible with pass. (I previously used &lt;code&gt;Keepass&lt;/code&gt;, but I did not like the fact that it is really a Windows app ported for Linux, and that it ties you to its gui interface. Pass does things the Unix way, and I like that.)&lt;/p&gt;
+
+&lt;p&gt;I always had the suspicion that my speed issues were due to the fact that my Flash plugin was grossly out of date. (If you are a Linux user you will probably know that Adobe stopped supporting the Flash plugin for Linux a few years ago.)&lt;/p&gt;
+
+&lt;p&gt;For Linux users the only way to have an up to date Flash plugin is to use the &lt;code&gt;Pepperflash plugin&lt;/code&gt; that ships with Google Chrome. The Firefox developers however do not want to &lt;a href=&#34;http://www.internetnews.com/blog/skerner/mozilla-doesnt-want-pepper-for-linux-flash.html&#34;&gt;adopt this approach&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;the-solution&#34;&gt;The solution&lt;/h1&gt;
+
+&lt;p&gt;A couple of days ago my browser was incredibly slow once again and I began to look around for a way to use Pepperflash with Firefox, and I found &lt;a href=&#34;https://github.com/i-rinat/freshplayerplugin&#34;&gt;freshplayerplugin&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;On Arch Linux it was super simple to install it from the AUR:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;yaourt -S freshplayerplugin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I also removed the old Adobe flash plugin:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;yaourt -S flashplugin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2 days in, and my Firefox is feeling much more responsive.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>i3myway screenshots</title>
+      <link>http://www.tjaart.co.za/post/i3myway/</link>
+      <pubDate>Sun, 01 Mar 2015 11:13:47 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/post/i3myway/</guid>
+      <description>
+
+&lt;h1 id=&#34;i3myway&#34;&gt;i3myway&lt;/h1&gt;
+
+&lt;p&gt;i3myway is a Tiling based Window Manager for the Wayland display server. It is written as a Weston plugin.&lt;/p&gt;
+
+&lt;p&gt;The source is still pretty buggy, and I have not released it publicly yet, but here are some screenshots:&lt;/p&gt;
+
+&lt;h2 id=&#34;horizontally-split-windows&#34;&gt;Horizontally split windows&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;//raw.githubusercontent.com/tjaartvdwalt/tjaartvdwalt.github.io/source/assets/i3myway/horizontal_split.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;vertically-split-windows&#34;&gt;Vertically split windows&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;//raw.githubusercontent.com/tjaartvdwalt/tjaartvdwalt.github.io/source/assets/i3myway/vertical_split.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;nested-vertically-split-windows&#34;&gt;Nested vertically split windows&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;//raw.githubusercontent.com/tjaartvdwalt/tjaartvdwalt.github.io/source/assets/i3myway/nested_vertical.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;nested-horizontally-split-windows&#34;&gt;Nested horizontally split windows&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;//raw.githubusercontent.com/tjaartvdwalt/tjaartvdwalt.github.io/source/assets/i3myway/nested_horizontal.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

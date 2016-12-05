@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Photo-rsses on Tjaart&#39;s homepage</title>
+    <link>http://www.tjaart.co.za/photo/index.xml</link>
+    <description>Recent content in Photo-rsses on Tjaart&#39;s homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Tjaart van der Walt</copyright>
+    <lastBuildDate>Wed, 17 Aug 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.tjaart.co.za/photo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Smokie Mountains, August 2016</title>
+      <link>http://www.tjaart.co.za/photo/smokies/</link>
+      <pubDate>Wed, 17 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/photo/smokies/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Atlanta, August 2016</title>
+      <link>http://www.tjaart.co.za/photo/atlanta/</link>
+      <pubDate>Thu, 11 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/photo/atlanta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Texas, May 2016</title>
+      <link>http://www.tjaart.co.za/photo/texas/</link>
+      <pubDate>Sat, 21 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/photo/texas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Washington, March 2016</title>
+      <link>http://www.tjaart.co.za/photo/washington/</link>
+      <pubDate>Sat, 05 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.tjaart.co.za/photo/washington/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
