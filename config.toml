@@ -22,7 +22,7 @@ googleAnalytics = ""
   date_format = "Mon, Jan 2, 2006"
 
   # Enable global LaTeX math rendering? If false, you can enable it locally on a per page basis.
-  math = false
+  math = true
 
   # Enable native social sharing buttons?
   sharing = true

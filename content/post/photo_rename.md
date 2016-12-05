@@ -1,8 +1,10 @@
 +++
 date = "2015-09-02T11:16:50"
-draft = false
-title = "photo_rename 0.1.1"
+image = ""
 math = true
+tags = ["software"]
+title = "photo_rename 0.1.1"
+
 +++
 
 I want to announce the release of version `0.1.1` of my Free Software tool [photo_rename](https://github.com/tjaartvdwalt/photo_rename/). To understand the importance of this release, you need to know some of its back story:

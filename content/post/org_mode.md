@@ -1,8 +1,9 @@
 +++
 date = "2015-08-28T10:24:58"
-draft = false
-title = "The problem with Org mode"
+image = ""
 math = true
+tags = ["opinion"]
+title = "The problem with Org mode"
 +++
 
 > I know that my ideas in this article will be hated by many staunch Org mode supporters. I still believe I am right.

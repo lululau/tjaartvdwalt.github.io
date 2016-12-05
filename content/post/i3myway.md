@@ -1,8 +1,10 @@
 +++
 date = "2015-03-01T11:13:47"
-draft = false
-title = "i3myway screenshots"
+image = ""
 math = true
+tags = ["software"]
+title = "i3myway screenshots"
+
 +++
 
 # i3myway

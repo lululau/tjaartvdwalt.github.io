@@ -1,8 +1,10 @@
 +++
 date = "2015-04-18T09:56:36"
-draft = false
-title = "Flash plugin on Firefox for Linux"
+image = ""
 math = true
+tags = ["linux"]
+title = "Flash plugin on Firefox for Linux"
+
 +++
 
 # The problem

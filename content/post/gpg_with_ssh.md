@@ -1,8 +1,10 @@
 +++
 date = "2015-06-03T18:26:24"
-draft = false
-title = "Using gpg-agent to cache your ssh passphrase"
+image = ""
 math = true
+tags = ["linux"]
+title = "Using gpg-agent to cache your ssh passphrase"
+
 +++
 
 > **UPDATE 2015-08-26**

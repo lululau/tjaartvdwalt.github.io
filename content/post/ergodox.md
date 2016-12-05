@@ -1,8 +1,10 @@
 +++
 date = "2015-05-28T11:46:48"
-draft = false
-title = "Building my ergodox"
+image = ""
 math = true
+tags = ["hardware"]
+title = "Building my ergodox"
+
 +++
 
 In this post I give a short description of how I built my ergodox:
